@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         eye.src = "assets/images/eyes.gif";
         eye.classList.add("eye");
 
-        // Случайное положение
+        // Случайное положение - только при создании!
         const randomX = Math.random() * window.innerWidth;
         const randomY = Math.random() * window.innerHeight;
 
+        eye.style.position = "absolute";  // Фиксируем позицию
         eye.style.left = `${randomX}px`;
         eye.style.top = `${randomY}px`;
 
