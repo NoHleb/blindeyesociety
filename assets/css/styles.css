@@ -49,4 +49,6 @@ video {
     position: absolute;
     width: 80px;
     opacity: 0.9;
+    pointer-events: none; /* Исключаем влияние курсора */
 }
+
