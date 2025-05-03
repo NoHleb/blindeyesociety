@@ -2,11 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
+    overflow: hidden;
 }
 
 .border-frame {
@@ -15,18 +11,8 @@ body {
     height: 98vh;
     border: 20px solid black; /* Толстая черная рамка */
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.content {
-    width: 80%;
-    position: relative;
-    z-index: 1;
-}
-
-/* Глаза на черной рамке */
 .eyes-container {
     position: absolute;
     width: 100%;
@@ -38,9 +24,4 @@ body {
     position: absolute;
     width: 60px;
     opacity: 0.9;
-}
-
-/* Скрытый файл (виден только в коде элемента) */
-#hidden-file {
-    display: none;
 }
