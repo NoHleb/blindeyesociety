@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         eyesContainer.appendChild(eye);
     }
 
-    // Создаём несколько глаз
+    // Создаём 10 случайных глаз
     for (let i = 0; i < 10; i++) {
         createEye();
     }
