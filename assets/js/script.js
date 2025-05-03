@@ -6,21 +6,20 @@ document.addEventListener("DOMContentLoaded", () => {
         eye.src = "assets/images/eyes.gif";
         eye.classList.add("eye");
 
-        // Генерируем случайную позицию ОДИН раз при создании
-        const randomX = Math.floor(Math.random() * window.innerWidth);
-        const randomY = Math.floor(Math.random() * window.innerHeight);
+        // Ограничиваем случайное положение только в зоне рамки
+        const borderSize = 20;
+        const randomX = borderSize + Math.random() * (window.innerWidth - 2 * borderSize - 60);
+        const randomY = borderSize + Math.random() * (window.innerHeight - 2 * borderSize - 60);
 
-        // Фиксируем позицию, запрещаем перемещение
         eye.style.position = "absolute";
         eye.style.left = `${randomX}px`;
         eye.style.top = `${randomY}px`;
 
-        // Добавляем глаз в контейнер
         eyesContainer.appendChild(eye);
     }
 
-    // Создаём 10 случайных глаз ОДИН раз при загрузке страницы
-    for (let i = 0; i < 10; i++) {
+    // Создаём 8 случайных глаз на рамке
+    for (let i = 0; i < 8; i++) {
         createEye();
     }
 });
