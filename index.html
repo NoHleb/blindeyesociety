@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>blindeyesociety</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blind Eye Society</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="eyes left">
-    <img src="media/eyes.gif" alt="eyes">
+  <div class="container">
+    <div class="eyes">
+      <img src="assets/images/eyes.gif" alt="Eyes" class="eye">
+    </div>
+    <div class="static">
+      <img src="assets/images/static.gif" alt="Static" class="static-img">
+    </div>
+    <div class="video-container">
+      <video id="video" controls>
+        <source src="assets/videos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
-
-  <div class="eyes right">
-    <img src="media/eyes.gif" alt="eyes">
-  </div>
-
-  <div class="center">
-    <video controls>
-      <source src="media/center.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <!-- Скрытый файл, не видно на странице -->
-  <a href="media/gabriel.dat" style="display: none;">secret</a>
 </body>
 </html>
