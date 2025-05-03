@@ -20,15 +20,16 @@ body {
   position: relative;
 }
 
-.eyes {
+.eyes-container {
   position: absolute;
-  top: 20%;
-  left: 10%;
-  right: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 .eye {
-  width: 100px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
   animation: blink 2s infinite;
 }
 
@@ -41,24 +42,8 @@ body {
   }
 }
 
-.static {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.static-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-}
-
 .video-container {
-  margin-top: 20px;
+  z-index: 1;
 }
 
 video {
