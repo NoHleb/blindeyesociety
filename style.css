@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+video {
+  width: 80vw;
+  max-width: 800px;
+  border: 3px solid red;
+  border-radius: 8px;
+}
+
+.eyes {
+  position: absolute;
+  top: 10%;
+  width: 100px;
+  height: auto;
+}
+
+.eyes.left {
+  left: 2%;
+}
+
+.eyes.right {
+  right: 2%;
+}
+
+.eyes img {
+  width: 100%;
+  height: auto;
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
