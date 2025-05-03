@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тебя не должно быть здесь</title>
+    <title>Тебя здесь не должно быть</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div class="border-frame">
         <div class="content">
-            <video src="assets/videos/video.mp4" autoplay loop muted></video>
+            <iframe width="800" height="450" 
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
-    <!-- Глаза на черной рамке -->
-    <div class="eyes-container"></div>
+    <!-- Скрытый файл -->
+    <a id="hidden-file" href="assets//gabriel.png" download style="display: none;">
+        Фотография мертвого габриеля.
+    </a>
 
     <audio src="assets/media/whisper.mp3" autoplay loop></audio>
 
