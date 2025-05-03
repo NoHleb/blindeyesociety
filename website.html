@@ -2,95 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>404</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-    body {
-      margin: 0;
-      background-color: black;
-      color: red;
-      font-family: 'Share Tech Mono', monospace;
-      overflow: hidden;
-    }
-
-    .glitch {
-      font-size: 3em;
-      text-align: center;
-      margin-top: 20vh;
-      position: relative;
-      animation: glitchAnim 1.5s infinite;
-    }
-
-    @keyframes glitchAnim {
-      0% { text-shadow: 2px 0 red, -2px 0 blue; }
-      20% { text-shadow: -2px 0 green, 2px 0 purple; }
-      40% { text-shadow: 2px 2px #f00, -2px -2px #0ff; }
-      60% { text-shadow: -1px 1px #fff, 1px -1px #000; }
-      100% { text-shadow: 2px 0 red, -2px 0 blue; }
-    }
-
-    .eye {
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      background-image: url('eye.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.8;
-      animation: blink 4s infinite;
-    }
-
-    .eye.left { top: 40%; left: 20px; }
-    .eye.right { top: 40%; right: 20px; }
-
-    @keyframes blink {
-      0%, 90%, 100% { opacity: 0.8; }
-      95% { opacity: 0; }
-    }
-
-    .static {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: url('static.gif');
-      opacity: 0.04;
-      z-index: 1000;
-      pointer-events: none;
-    }
-
-    .video-wrapper {
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-    }
-
-    video {
-      width: 60%;
-      box-shadow: 0 0 20px red;
-    }
-
-    .hidden {
-      display: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>blindeyesociety</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="eye left"></div>
-  <div class="eye right"></div>
-  <div class="static"></div>
-
-  <div class="glitch">ACCESS DENIED</div>
-
-  <div class="video-wrapper">
-    <video src="main.mp4" autoplay muted loop></video>
+  <div class="eyes left">
+    <img src="media/eyes.gif" alt="eyes">
   </div>
 
-  <!-- теперь здесь gabriel -->
-  <img src="gabriel.png" class="hidden" alt="gabriel">
-  <audio src="whispers.mp3" class="hidden" autoplay></audio>
+  <div class="eyes right">
+    <img src="media/eyes.gif" alt="eyes">
+  </div>
 
+  <div class="center">
+    <video controls>
+      <source src="media/center.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Скрытый файл, не видно на странице -->
+  <a href="media/gabriel.dat" style="display: none;">secret</a>
 </body>
 </html>
