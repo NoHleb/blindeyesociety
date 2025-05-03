@@ -37,14 +37,16 @@ video {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.eye {
+/* Стилизуем случайные глаза */
+.eyes-container {
     position: absolute;
-    top: 10%;
-    animation: moveEye 6s infinite alternate ease-in-out;
-    width: 100px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
-@keyframes moveEye {
-    0% { left: 10%; }
-    100% { left: 80%; }
+.eye {
+    position: absolute;
+    width: 80px;
+    opacity: 0.9;
 }
