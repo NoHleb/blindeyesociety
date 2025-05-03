@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blind Eye Society</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARG: Мрачный цифровой мир</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="video-container">
-      <video id="video" controls>
-        <source src="assets/videos/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="background">
+        <img src="statistic.gif" alt="Помехи" class="static">
     </div>
-    <div class="eyes-container">
-      <img src="assets/images/eyes.gif" alt="Eyes" class="eye">
-      <img src="assets/images/eyes.gif" alt="Eyes" class="eye">
+
+    <div class="content">
+        <video src="video.mp4" autoplay loop muted></video>
+        <img src="eyes.gif" alt="Бегающий глаз" class="eye">
     </div>
-  </div>
+
+    <audio src="whisper.mp3" autoplay loop class="whisper"></audio>
+
 </body>
 </html>
