@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>blindeyesociety</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
-  <div class="eyes left">
-    <img src="media/eyes.gif" alt="eyes">
+  <div class="countdown" id="countdown"></div>
+
+  <div class="container">
+    <div class="video-container">
+      <video id="video" controls>
+        <source src="assets/videos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="eyes-container">
+      <img src="assets/images/eyes.gif" alt="Eyes" class="eye">
+      <img src="assets/images/eyes.gif" alt="Eyes" class="eye">
+    </div>
   </div>
 
-  <div class="eyes right">
-    <img src="assets/images/eyes.gif" alt="eyes">
-  </div>
-
-  <div class="center">
-    <video controls>
-      <source src="media/center.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <a href="media/gabriel.png" style="display: none;">Фотография мёртвого Габриеля.</a>
+  <script src="script.js"></script>
 </body>
-</html>
