@@ -3,57 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ü</title>
-  <style>
-    body {
-      background-color: black;
-      color: #00ff00;
-      font-family: 'Courier New', monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 1em;
-    }
-
-    #countdown {
-      font-size: 3em;
-    }
-  </style>
+  <title>blindeyesociety</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ü</h1>
-  <div id="countdown">Загрузка...</div>
+  <div class="eyes left">
+    <img src="media/eyes.gif" alt="eyes">
+  </div>
 
-  <script>
-    function updateCountdown() {
-      const now = new Date();
-      let target = new Date();
+  <div class="eyes right">
+    <img src="media/eyes.gif" alt="eyes">
+  </div>
 
-      target.setHours(3, 0, 0, 0); // 3:00 ночи
+  <div class="center">
+    <video controls>
+      <source src="media/center.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-      // Если уже позже 3:00 — отсчёт до следующей ночи
-      if (now > target) {
-        target.setDate(target.getDate() + 1);
-      }
-
-      const diff = target - now;
-
-      const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
-      const minutes = String(Math.floor((diff / (1000 * 60)) % 60)).padStart(2, '0');
-      const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
-
-      document.getElementById('countdown').textContent = `${hours}:${minutes}:${seconds}`;
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
+  <a href="media/gabriel.png" style="display: none;">Фотография мёртвого Габриеля.</a>
 </body>
 </html>
